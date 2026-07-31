@@ -12,8 +12,17 @@ function loginUser(user, callback) {
     }, 2000)
 }
 
-loginUser("Henrique"), () => {
-    loadOrders(() => {
-        console.log("Tudo finalizado!")
-    })
+function loadDetails(callback) {
+    setTimeout(() => {
+        console.log("3 - Detalhes carregados")
+        callback()
+    }, 2000)
 }
+
+loginUser("Henrique", () => {
+    loadOrders(() => {
+        loadDetails(() => {
+            console.log("Tudo finalizado!")
+        })
+    })
+})
