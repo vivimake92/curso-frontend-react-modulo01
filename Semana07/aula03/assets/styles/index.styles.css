@@ -1,0 +1,34 @@
+#without-spacing {
+  margin: 0;
+  padding: 0;
+}
+
+#with-border {
+  border: 2px solid #00e1ff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 6px 0;
+}
+
+#with-padding {
+  /*padding: 32px 0 0 20px;*/
+  border: 1px solid black;
+  padding-top: 32px;
+  padding-left: 20px;
+}
+
+.links-list li {
+  border-left: 2px solid hotpink;
+  padding-left: 6px;
+}
+
+.links-list {
+  list-style: none;
+}
+
+#square {
+  background-color: chocolate;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
