@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f5f5dc;
+  border: 1px solid #2db487;
+  color: #2db487;
+  padding: 16px; /* Para o texto nao ficar colado */
+}
+
+.done {
+  background-color: #64bae2;
+  border-color: #06557a;
+  color: #423e3e;
+}
+
+.canceled {
+  background-color: #e65f5f;
+  border-color: #c00909;
+  color: black;
+}
+
+.btn-sucess {
+  padding: 4px;
+  margin-top: 8px;
+  background-color: #06557a;
+  color: #f5f5dc;
+  border-radius: 6px;
+}
+
+.btn-danger {
+  padding: 4px;
+  margin-top: 8px;
+  background-color: #810202;
+  color: #f5f5dc;
+  border-radius: 6px;
+  border: none;
+}
+
+.detail {
+  height: 600px;
+}
