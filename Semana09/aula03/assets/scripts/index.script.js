@@ -1,0 +1,38 @@
+console.log("Validação");
+
+const form = document.getElementById("form");
+const eventsList = document.getElementById("eventsList");
+
+const list = [];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const eventName = document.getElementById("event").value.trim();
+
+  if (eventName == "") {
+    return console.log("Nome inválido!"); // O return faz essa parte do código parar aqui
+  }
+
+  //console.log(eventName);
+
+  const sameTitle = list.filter((item) => {
+    return item == eventName;
+  });
+
+  if (sameTitle.length > 0) {
+    return console.log("Evento já cadastrado!");
+  }
+
+  list.push(eventName);
+
+  //console.log(list);
+
+  const finalList = list
+    .map((item) => {
+      return `<li>${item}</li>`;
+    })
+    .join("");
+
+  eventsList.innerHTML = finalList;
+});
