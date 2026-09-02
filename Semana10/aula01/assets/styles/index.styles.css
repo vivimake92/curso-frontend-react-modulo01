@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.holanda {
+  height: 100px;
+  margin: 10px;
+}
+.red {
+  background-color: #8a0707;
+  height: 35px;
+  width: 150px;
+}
+
+.white {
+  background-color: #ffffff;
+  height: 35px;
+  width: 150px;
+}
+
+.blue {
+  background-color: #1414c9;
+  height: 35px;
+  width: 150px;
+}
+
+.franca {
+  display: flex;
+  height: 100px;
+  margin: 10px;
+}
+
+.red-franca {
+  background-color: #8a0707;
+  height: 100px;
+  width: 50px;
+}
+
+.white-franca {
+  background-color: #ffffff;
+  height: 100px;
+  width: 50px;
+}
+
+.blue-franca {
+  background-color: #1414c9;
+  height: 100px;
+  width: 50px;
+}
