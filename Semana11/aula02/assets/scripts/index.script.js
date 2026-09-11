@@ -58,3 +58,12 @@ const savedUsers = JSON.parse(localStorage.getItem("usuarios-lista"));
 
 console.log(savedUsers);
 */
+
+const clearButton = document.getElementById("clear-button");
+
+clearButton.addEventListener("click", () => {
+  console.log("Limpeza localStorage");
+
+  // localStorage.clear();
+  localStorage.removeItem("visitante-nome");
+});
